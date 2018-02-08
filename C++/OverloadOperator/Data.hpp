@@ -42,9 +42,9 @@ public:
     bool operator!=(const int val); 
      
     Data& operator=(const Data& data); //assign operator
-    Data operator++(); //pre-increment operator
+    Data& operator++(); //pre-increment operator
     Data operator++(int); //post-dcrement operator
-    Data operator--(); //pre-decrement operator
+    Data& operator--(); //pre-decrement operator
     Data operator--(int); //post-decrement operator
     
     Data operator+(const Data& data); //works with: data1 + data2

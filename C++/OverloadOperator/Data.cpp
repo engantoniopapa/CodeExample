@@ -72,7 +72,7 @@ Data& Data::operator=(const Data& data)
 }
 
 //pre-increment operator
-Data Data::operator++()
+Data& Data::operator++()
 {
     for(int i = 0; i < size ; i++)
     {
@@ -94,7 +94,7 @@ Data Data::operator++(int)
 }
 
 //pre-decrement operator
-Data Data::operator--()
+Data& Data::operator--()
 {
     for(int i = 0; i < size ; i++)
     {
