@@ -159,14 +159,14 @@ Data operator+(int val , const Data& data)
 }
 
 //works with: data1 += data2
-Data Data::operator+=(const Data& data)
+Data& Data::operator+=(const Data& data)
 {
     (*this) = (*this)+data;
     return (*this);
 }
 
 //works with: data1 += val
-Data Data::operator+=(int val)
+Data& Data::operator+=(int val)
 {
     (*this) = (*this) + val;
     return (*this);

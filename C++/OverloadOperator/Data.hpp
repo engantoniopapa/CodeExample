@@ -49,8 +49,8 @@ public:
     
     Data operator+(const Data& data); //works with: data1 + data2
     Data operator+(int val); //works with: data1 + val 
-    Data operator+=(const Data& data); //works with: data1 += data2
-    Data operator+=(int val); //works with: data1 += val 
+    Data& operator+=(const Data& data); //works with: data1 += data2
+    Data& operator+=(int val); //works with: data1 += val 
     
     //works with: val + data2
     //doesn't have sense but I have just implemented to have a simmetric implementation with friend 
