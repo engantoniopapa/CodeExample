@@ -56,4 +56,23 @@ public:
 };
 
 
+//Singleton3 - lazy initialization, thread safe with once flag:
+class Singleton4
+{
+private:
+	static Singleton4* s_instance;
+	static std::once_flag onceFlag;
+	Singleton4() {};
+	static void initSingleton();
+	static void delSingleton();
+
+public:
+	static Singleton4* get_instance();
+	static void destroy_instance();
+	void do_something();
+	~Singleton4() {};
+	Singleton4(const Singleton4&) = delete;
+	Singleton4& operator=(const Singleton4&) = delete;
+};
+
 #endif

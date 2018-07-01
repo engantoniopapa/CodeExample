@@ -1,4 +1,6 @@
+#include "stdafx.h"
 #include "Singleton.hpp"
+#include <iostream>
 
 
 
@@ -14,16 +16,25 @@ int main()
     Singleton3 *S3_1 = Singleton3::get_instance();
     Singleton3 *S3_2 = Singleton3::get_instance();
 
+	Singleton4 *S4_1 = Singleton4::get_instance();
+	Singleton4 *S4_2 = Singleton4::get_instance();
+
     S1_1->do_something();
     S1_2->do_something();
     S2_1->do_something();
     S2_2->do_something();
     S3_1->do_something();
     S3_2->do_something();
+	S4_1->do_something();
+	S4_2->do_something();
 
     Singleton1::destroy_instance();
     Singleton2::destroy_instance();
     Singleton3::destroy_instance();
+	Singleton4::destroy_instance();
+
+
+	std::cin.get();
     
     return EXIT_SUCCESS;
 }
