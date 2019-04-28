@@ -9,8 +9,16 @@
 bin/
 obj/
 Obj/
+Debug/
+Release/
+.vs/
 ######################
 # Logs and databases #
 ######################
 *.log
 *.sqlite
+*.opendb
+######################
+# Visual Studio      #
+######################
+*.vcxproj.user
