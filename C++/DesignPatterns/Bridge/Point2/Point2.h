@@ -16,7 +16,7 @@ private:
 	Point2_Imp* imp_;
 };
 
-
+//Template class cannot be exported
 template<class T>
 class Point2T_Imp;
 
