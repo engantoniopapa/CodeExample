@@ -12,6 +12,7 @@ Obj/
 Debug/
 Release/
 .vs/
+packages/
 ######################
 # Logs and databases #
 ######################
