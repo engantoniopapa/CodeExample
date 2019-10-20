@@ -1,6 +1,5 @@
-#define MAKEDLL
-
 #include "stdafx.h"
+#define MAKEDLL
 #include "Point2.h"
 #include "Point2_Imp.h"
 
